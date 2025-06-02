@@ -1,3 +1,5 @@
+
+
 public class BuclesFor {
     public static void main(String[] args) {
         
@@ -166,5 +168,138 @@ public class BuclesFor {
         for(int i = 1; i <= 10; i++){
             System.out.print(i * i + " ");
         }
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJERCICIOS MEDIOS");
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 1");
+        System.out.println();
+        System.out.println();
+
+        //Mostrar la suma de los primeros 20 números impares.
+
+        int sumaImpar = 0;
+        for(int i = 1; i<= 20; i++){
+            if (i%2 != 0) {
+                sumaImpar = sumaImpar + i;
+            }
+        }
+
+        System.out.println(sumaImpar);
+
+
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 2");
+        System.out.println();
+        System.out.println();
+
+        //Mostrar los divisores de un número n 
+
+        int nDiv = 25;
+
+        for(int i = 1; i<= nDiv; i++){
+            if (nDiv%i == 0) {
+                System.out.print(i + " ");
+            }
+        }
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 3");
+        System.out.println();
+        System.out.println();
+
+        //Contar cuántos múltiplos de 5 hay entre 1 y 100.
+
+        int count = 0;
+        for(int i = 1; i <= 100; i++){
+            if (i%5 == 0) {
+                count ++;
+            }
+        }
+
+        System.out.println(count );
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 4");
+        System.out.println();
+        System.out.println();
+    
+
+        //Mostrar la tabla de multiplicar de todos los números del 1 al 10.
+
+        for(int i = 1; i <= 10; i++){
+            System.out.println("Tabla del " + i);
+            for(int j = 1; j <= 10 ; j++){
+                System.out.print(i * j + " ");
+            }
+            System.out.println();
+            System.out.println();
+            
+        }
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 5");
+        System.out.println();
+        System.out.println();
+
+        //Sumar los números pares del 1 al 100.
+
+        int sumPares = 0;
+        for(int i = 1; i <= 100; i++){
+            if(i%2 == 0){
+                sumPares += i;
+            }
+        }
+
+        System.out.println(sumPares);
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 6");
+        System.out.println();
+        System.out.println();
+
+        //Mostrar los números del 1 al 100, pero si es múltiplo de 3 mostrar "Fizz",
+        //si es múltiplo de 5 "Buzz", y si es de ambos "FizzBuzz".
+
+
+
+        for(int i = 1; i <= 100; i++){
+            if (i%3 == 0 && i%5 == 0) {
+                System.out.println("FizzBuzz");
+            }else if (i%5 == 0) {
+                System.out.println("Buzz");
+            }else if (i%3 == 0){
+                System.out.println("Fizz");
+            }else{
+                System.out.println(i);
+            }
+        }
+
+
     }
 }
