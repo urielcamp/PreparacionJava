@@ -301,5 +301,122 @@ public class BuclesFor {
         }
 
 
+                System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJERCICIOS DIFICILES");
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+
+
+                // EJERCICIOS DIFICILES
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 1");
+        System.out.println();
+        System.out.println();
+
+        //Invertir un número entero (ej: de 1234 → 4321) usando solo bucles y operaciones matemáticas.
+
+        int num = 12345;
+
+        int invertida = 0;
+
+        for(; num != 0; num = num / 10){
+            int digito = num % 10;
+            invertida = invertida * 10 + digito;
+        }        
+
+        System.out.println(invertida);
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 2");
+        System.out.println();
+        System.out.println();
+
+        //Dibujar un triángulo de asteriscos creciente
+        
+        int figuras = 5;
+
+        for(int i = 1; i <= figuras; i++){
+            for(int j = 1; j <= i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 3");
+        System.out.println();
+        System.out.println();
+
+        //Dibujar un triángulo invertido:
+
+        int fig = 6;
+
+        for(int i = fig; i > 0; i--){
+            for(int j = i; j > 0; j--){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 4");
+        System.out.println();
+        System.out.println();
+
+        //Calcular el factorial de un número n (ej: 5! = 5×4×3×2×1).
+
+        int nFac = 5;
+        int cont = 1;
+
+        for(int i = nFac; i > 0; i--){
+            
+            cont *= i;
+        }
+
+        System.out.println(cont);
+
+                System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 5");
+        System.out.println();
+        System.out.println();
+
+        //Dibujar un cuadrado de asteriscos de tamaño n
+
+        int nC = 4;
+
+        for(int i = 1; i <= nC; i++){
+            //i = 1;
+            if (i <= nC) {
+                System.out.print("*");
+                i++;
+            }
+            for(int j = 1; j <= i; j++){
+                System.out.println();
+            }
+        }
+
+
+
     }
 }
