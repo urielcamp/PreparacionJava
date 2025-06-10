@@ -394,28 +394,6 @@ public class BuclesFor {
         System.out.println(cont);
 
                 System.out.println();
-        System.out.println();
-        System.out.println("---------------------------------");
-        System.out.println();
-        System.out.println("EJER 5");
-        System.out.println();
-        System.out.println();
-
-        //Dibujar un cuadrado de asteriscos de tamaño n
-
-        int nC = 4;
-
-        for(int i = 1; i <= nC; i++){
-            //i = 1;
-            if (i <= nC) {
-                System.out.print("*");
-                i++;
-            }
-            for(int j = 1; j <= i; j++){
-                System.out.println();
-            }
-        }
-
 
 
     }
