@@ -3,7 +3,7 @@ import java.util.LinkedList;
 public class Main{
         public static void main(String[] args) {
             
-System.out.println();
+        System.out.println();
         System.out.println();
         System.out.println("---------------------------------");
         System.out.println();
@@ -158,7 +158,130 @@ System.out.println();
 
         System.out.println(enteros.size());
 
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJERCICIOS MEDIOS LINKEDLIST");
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
 
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 1");
+        System.out.println();
+        System.out.println();
+
+        //Recorrer la lista al revés (sin usar descendingIterator).
+
+        LinkedList<Integer> numeros = new LinkedList();
+
+        numeros.add(1);
+        numeros.add(2);
+        numeros.add(3);
+        numeros.add(4);
+        numeros.add(5);
+
+        for(int i = numeros.size() - 1; i >= 0; i--){
+            System.out.print(numeros.get(i) + " ");
+        }
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 2");
+        System.out.println();
+        System.out.println();
+
+        //Sumar todos los elementos de una lista de enteros.
+
+        int sum = 0;
+
+        for(int i = 0; i < numeros.size(); i++){
+            sum = sum + numeros.get(i);
+        }
+
+        System.out.println(sum);
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 3");
+        System.out.println();
+        System.out.println();
+
+        //Encontrar el valor máximo y mínimo de la lista.
+
+        int max = numeros.get(0);
+        int min = numeros.get(0);
+
+        for(int i = 0; i <= numeros.size() - 1; i++){
+            int valor = numeros.get(i);
+            if (valor > max ) {
+                max = valor;
+            }
+
+            if (valor < min) {
+                min = valor;
+            }
+        }
+
+        System.out.println("el maximo de la lista es " + max);
+        System.out.println();
+        System.out.println("el minimo de la lista es " + min);
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 4");
+        System.out.println();
+        System.out.println();
+
+        //Eliminar todos los elementos que sean menores que 10
+
+        LinkedList<Integer> m = new LinkedList<>();
+
+        m.add(123);
+        m.add(23);
+        m.add(2);
+        m.add(12);
+        m.add(5);
+        m.add(45);
+        m.add(68);
+        m.add(98);
+
+
+        System.out.println(m + " ");
+        for(int i = 0; i <= m.size() - 1; i++){
+            int valor = m.get(i); 
+            if (valor < 10) {
+                m.remove(i);
+            }
+        }
+
+        System.out.println(m + " ");
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 5");
+        System.out.println();
+        System.out.println();
+
+        //Insertar un valor en la posición 3 de la lista.
+
+        m.add(3, 88);
+
+        System.out.println(m);
 
 
 
