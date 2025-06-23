@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.Arrays;
 
 public class Main{
         public static void main(String[] args) {
@@ -282,6 +283,222 @@ public class Main{
         m.add(3, 88);
 
         System.out.println(m);
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJERCICIOS FACILES ARRAYS");
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 1");
+        System.out.println();
+        System.out.println();
+
+        //Crear un array de 5 enteros y mostrar sus valores.
+
+        int[] ent = {1, 2, 3, 4 , 5 };
+
+        System.out.println(Arrays.toString(ent));
+        
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 2");
+        System.out.println();
+        System.out.println();
+
+        //Llenar un array de tamaño 10 con los números del 1 al 10.
+
+        int[] nu = new int[10];
+
+        nu[0] = 1;
+        nu[1] = 2;
+        nu[2] = 3;
+        nu[3] = 4;
+        nu[4] = 5;
+        nu[5] = 6;
+        nu[6] = 7;
+        nu[7] = 8;
+        nu[8] = 9;
+        nu[9] = 10;
+
+        System.out.println(Arrays.toString(nu));
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 3");
+        System.out.println();
+        System.out.println();
+
+        //Imprimir los valores de un array en orden inverso.
+
+
+        for(int i = nu.length - 1; i >= 0; i--){
+            System.out.print(nu[i] + " ");
+        }
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 4");
+        System.out.println();
+        System.out.println();
+
+        //Calcular la suma de todos los elementos de un array.
+
+        int s = 0;
+
+        for(int i = 0; i < nu.length; i++){
+            s += nu[i];
+        }
+
+        System.out.println(s);
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 5");
+        System.out.println();
+        System.out.println();
+
+        //Calcular el promedio de los elementos de un array.
+
+        int sm = 0;
+
+        for(int i = 0; i < nu.length; i++){
+            sm += nu[i];
+        }
+        
+        double pm = sm / nu.length;
+        System.out.println(pm);
+        
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 6");
+        System.out.println();
+        System.out.println();
+
+        //Contar cuántos números pares hay en un array.
+
+        int c = 0;
+
+        for(int i = 0; i < nu.length; i++){
+            if (nu[i]%2 == 0) {
+                c++;
+            }
+        }
+
+        System.out.println("el array tiene " + c + " numeros pares");
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 7");
+        System.out.println();
+        System.out.println();
+
+        //Buscar un número específico dentro de un array.
+
+        int indice = Arrays.binarySearch(nu, 4);
+
+        System.out.println(indice);
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 8");
+        System.out.println();
+        System.out.println();
+
+        //Copiar los elementos de un array en otro array.
+
+        int[] otroArray = new int[nu.length];
+
+        for(int i = 0; i < nu.length; i++){
+                otroArray[i] = nu[i];
+        }
+
+        System.out.println(Arrays.toString(otroArray));
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 9");
+        System.out.println();
+        System.out.println();
+        
+        //Multiplicar todos los elementos del array por 2.
+
+        for(int i = 0; i < otroArray.length; i++){
+            otroArray[i] = otroArray[i] * 2;
+        }
+
+        System.out.println(Arrays.toString(otroArray));
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 10");
+        System.out.println();
+        System.out.println();
+
+        //Verificar si un número ingresado por el usuario está en el array.
+
+        int nUser = 9;
+
+        boolean esta = true;
+
+        //System.out.println(Arrays.binarySearch(nu, nUser));
+
+        if (Arrays.binarySearch(nu, nUser) > 0) {
+            esta = true;
+        }else{
+            esta = false;
+        }
+
+        if (esta) {
+            System.out.println("el numero " + nUser + " esta en el array");
+        }else{
+            System.out.println("el numero no se encuentra en el array");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
