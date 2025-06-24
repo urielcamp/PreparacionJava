@@ -487,7 +487,167 @@ public class Main{
         }
 
 
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJERCICIOS MEDIOS ARRAYS");
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
 
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 1");
+        System.out.println();
+        System.out.println();
+
+        //Encontrar el valor máximo y mínimo de un array
+
+        int[] numArrays = {1, 3, 54, 5, 34, 2, 56, 90, 32, 4523, 4, 0};
+
+        int mayor = 1;
+
+        int menor = 1;
+
+        for(int i = 0; i < numArrays.length; i++){
+            if (mayor < numArrays[i]) {
+                mayor = numArrays[i];
+            }
+
+            if (menor > numArrays[i]) {
+                menor = numArrays[i]; 
+            }
+        }
+
+        System.out.println(mayor);
+        System.out.println();
+        System.out.println(menor);
+
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 2");
+        System.out.println();
+        System.out.println();
+
+        //Invertir un array sin usar otro array auxiliar.
+
+        int[] array = {1,2,3,4,5,6,7,8,9,10,11,12,13};
+
+        for(int i = 0; i < array.length / 2 ; i++){
+            int temp = array[i];
+            array[i] = array[array.length - 1 - i];
+            array[array.length - 1 - i] = temp;
+        }
+
+        System.out.println(Arrays.toString(array));
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 3");
+        System.out.println();
+        System.out.println();
+
+        //Eliminar todos los números negativos de un array (reconstruyendo otro array).
+
+        int[] arrOrigin = {1, -1, 2, -2, 3, -3, 4, -4, 5, -5};
+
+        int[] arrRec = new int[arrOrigin.length];
+
+        for(int i = 0; i < arrOrigin.length; i++){
+            if (arrOrigin[i] > 0) {
+                arrRec[i] = arrOrigin[i];
+            }
+        }
+
+        System.out.println(Arrays.toString(arrRec));
+
+
+        
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 4");
+        System.out.println();
+        System.out.println();
+
+        //Contar cuántas veces se repite un número específico en el array.
+
+        int[] arrRep = {1,2,3,3,4,4,4,5,2,2};
+
+        int count = 0;
+        int n = 3;
+
+
+
+        for(int i = 1; i < arrRep.length; i++){
+            if (arrRep[i] == n) {
+                count++;
+            }
+        }
+
+        System.out.println(count);
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 5");
+        System.out.println();
+        System.out.println();
+
+        //Crear un array con los primeros 10 números impares.
+
+
+        int[] arr = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17};
+        int[] newArray = new int[11];
+        for(int i = 0; i <= 11; i++){
+            if (arr[i]%2 == 0) {
+                
+            }else{
+                newArray[i] = arr[i];
+            }
+        }
+
+        System.out.println(Arrays.toString(newArray));
+
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 6");
+        System.out.println();
+        System.out.println();
+
+        //Sumar los valores en posiciones pares e impares por separado.
+
+
+        int contadorPar = 0;
+        int contadorImpar = 0;
+        for(int i = 0; i < arr.length; i++){
+            if (arr[i]%2 == 0) {
+                contadorPar += arr[i];
+            }else{
+                contadorImpar += arr[i];
+            }
+        }
+
+
+        System.out.println("La suma de los valores pares son: " + contadorPar + " y de los impares es: " + contadorImpar);
 
 
 
