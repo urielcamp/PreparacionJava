@@ -649,11 +649,59 @@ public class Main{
 
         System.out.println("La suma de los valores pares son: " + contadorPar + " y de los impares es: " + contadorImpar);
 
+        
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJERCICIOS FACILES CLASES Y OBJETOS");
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 1");
+        System.out.println();
+        System.out.println();
+
+        //Crear una clase Animal con atributos especie y edad, y sobrecargar 2 constructores.
+
+        Animal leon = new Animal("Leon ",10);
 
 
+        leon.mostrarAnimal();
 
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 2");
+        System.out.println();
+        System.out.println();
 
+        //Crear una clase Auto con marca y año. Crear 3 objetos con diferentes constructores.
 
+        Auto fiat = new Auto("Fiat",2013);
+
+        fiat.mostrarAuto();
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 3");
+        System.out.println();
+        System.out.println();
+
+        //Crear una clase Libro con título, autor y año. Mostrar la información con un método.
+
+        Libro borraDelCafe = new Libro("Borra del Cafe", "Benedetti", 1992);
+
+        borraDelCafe.mostrarLibro();
 
 
 
