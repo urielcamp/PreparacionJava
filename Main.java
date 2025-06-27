@@ -704,7 +704,50 @@ public class Main{
         borraDelCafe.mostrarLibro();
 
 
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 4");
+        System.out.println();
+        System.out.println();
 
+        //Clase Estudiante con nombre, edad y carrera. Crear métodos como estudiar().
+
+        Estudiante estudiante = new Estudiante("Pedro", 25, "Abogacia");
+        
+        estudiante.estudiar();
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 5");
+        System.out.println();
+        System.out.println();
+
+        //Clase Producto con nombre, precio y cantidad. Agregar constructor vacío y completo.
+
+        Producto producto1 = new Producto();
+        Producto producto2 = new Producto("Play 5", 660, 4);
+
+        producto1.mostrarProducto();
+        System.out.println();
+        producto2.mostrarProducto();
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 6");
+        System.out.println();
+        System.out.println();
+
+        //Clase Empleado con sueldo base. Calcular sueldo final con un bono pasado por constructor.
+
+        Empleado empleado = new Empleado(10000, 10.0);
+
+        empleado.calcularSueldo();
 
 
 
