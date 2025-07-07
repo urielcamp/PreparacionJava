@@ -1,8 +1,8 @@
 public class Empleado {
     //Clase Empleado con sueldo base. Calcular sueldo final con un bono pasado por constructor.
 
-    private int sueldoBase;
-    private double sueldoFinal;
+    protected int sueldoBase;
+    protected double sueldoFinal;
 
     public Empleado(int sueldoBase, double bono){
         this.sueldoBase = sueldoBase;

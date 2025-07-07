@@ -817,8 +817,51 @@ public class Main{
 
         Animal a1 = new Animal("Gato");
         Animal a2 = new Perro("Bob", 3);
+
         a1.sonido();
         a2.sonido();
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 5");
+        System.out.println();
+        System.out.println();
+
+        //Crear una clase Figura con método calcularArea()
+        //y subclases Cuadrado, Círculo, etc., que lo sobrescriban.
+
+        Figura f1 = new Cuadrado(4);
+        Figura f2 = new Rectangulo(4, 2);
+
+        f1.calcularArea();
+        f2.calcularArea();
+
+        f1.mostrarFigura();
+        f2.mostrarFigura();
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 6");
+        System.out.println();
+        System.out.println();
+
+        //Hacer una clase Empleado con subclases EmpleadoFijo y EmpleadoPorHora,
+        //y calcular sueldos con polimorfismo.
+
+        Emple e1 = new EmpleadoFijo(1000);
+        Emple e2 = new EmpleadoHora(1000, 10);
+
+        e1.calcularSueldo();
+        e2.calcularSueldo();
+
+        e1.mostrarSueldo();
+        e2.mostrarSueldo();
+
+
 
 
 
