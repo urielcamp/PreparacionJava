@@ -750,6 +750,75 @@ public class Main{
         empleado.calcularSueldo();
 
 
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJERCICIOS HERENCIA Y POLIMORFISMO");
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 1");
+        System.out.println();
+        System.out.println();
+
+        //Crear una clase Persona con nombre y edad.
+        //Crear una clase Estudiante que herede de Persona y agregue carrera.
+
+        Es es = new Es("LTI", "Pedro", 34);
+
+        es.mostrarPersona();
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 2");
+        System.out.println();
+        System.out.println();
+
+        //Clase Transporte con método mover(). 
+        //Subclases Auto, Bicicleta que sobrescriben ese método.
+
+        Bicicleta bici = new Bicicleta();
+        Patineta patineta = new Patineta();
+
+        bici.mover();
+        patineta.mover();
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 3");
+        System.out.println();
+        System.out.println();
+
+        //Clase Animal → subclase Perro, con su propio sonido.
+
+        Perro dogo = new Perro("Dogo", 4);
+        dogo.sonido();
+        dogo.mostrarPerro();
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 4");
+        System.out.println();
+        System.out.println();
+
+        //Crear un array de Animal y guardar objetos de Perro, Gato, etc., e invocar el método hacerSonido().
+
+        Animal a1 = new Animal("Gato");
+        Animal a2 = new Perro("Bob", 3);
+        a1.sonido();
+        a2.sonido();
 
 
 

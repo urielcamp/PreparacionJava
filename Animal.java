@@ -1,7 +1,7 @@
 public class Animal {
     
-    private int edad;
-    private String especie;
+    protected int edad;
+    protected String especie;
 
 
     public Animal(String especie, int edad){
@@ -23,5 +23,9 @@ public class Animal {
 
     public void mostrarAnimal(){
         System.out.println("Especie: " + especie + " / " + " Edad: " + edad + " Años");
+    }
+
+    public void sonido(){
+        System.out.println("Sonido animal");
     }
 }
