@@ -8,7 +8,7 @@ public class Series {
         System.out.println();
         System.out.println("---------------------------------");
         System.out.println();
-        System.out.println("EJERCICIOS  SERIES");
+        System.out.println("EJERCICIOS  SERIES FIBONACCI");
         System.out.println();
         System.out.println("---------------------------------");
         System.out.println();
@@ -88,6 +88,105 @@ public class Series {
         }
 
         System.out.println(Arrays.toString(fibonacci));
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJERCICIOS  SERIES PADOVAN");
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 1");
+        System.out.println();
+        System.out.println();
+
+        //Crear un programa que genere los primeros 12 números de la serie de Padovan en un array.
+
+        int[] pad = new int[20];
+
+        pad[0] = pad[1] = pad[2] = 1;
+
+        for(int i = 3; i < pad.length; i++){
+            pad[i] = pad[i - 2] + pad[i - 3];
+        }
+
+        System.out.println(Arrays.toString(pad));
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 2");
+        System.out.println();
+        System.out.println();
+
+        //Mostrar todos los números impares de la serie Padovan entre los primeros 20.
+
+        int[] padImpar = new int[20];
+
+        padImpar[0] = padImpar[1] = padImpar[2] = 1;
+
+        int[] padAux = new int[padImpar.length];
+        padAux[0] = padAux[1] = padAux[2] = 1;
+
+        for(int i = 3; i < padAux.length; i++){
+            padAux[i] = padAux[i - 2] + padAux[i - 3];
+
+            if (padAux[i]%2 != 0) {
+                padImpar[i] = padAux[i];
+            }
+        }
+
+        System.out.println(Arrays.toString(padImpar));
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 3");
+        System.out.println();
+        System.out.println();
+
+        //Pedir al usuario el tamaño de la serie y llenar un array con la serie de Padovan hasta ese tamaño.
+
+        int nUser = 20;
+
+        int[] padovan = new int[n];
+
+        padovan[0] = padovan[1] = padovan[2] = 1;
+
+        for(int i = 3; i < padovan.length; i++){
+            padovan[i] = padovan[i-2] + padovan[i-3];
+        }
+
+        System.out.println(Arrays.toString(padovan));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 }
