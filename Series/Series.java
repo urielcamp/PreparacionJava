@@ -169,6 +169,146 @@ public class Series {
         System.out.println(Arrays.toString(padovan));
 
 
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJERCICIOS  SERIES");
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 1");
+        System.out.println();
+        System.out.println();
+
+        //Crear un array con los primeros 15 números de la serie Tribonacci. Los tres primeros son 0, 0, 1.
+
+        int[] tribonacci = new int[15];
+
+        tribonacci[0] = tribonacci[1] = 0;
+        tribonacci[2] = 1;
+
+        for(int i = 3; i < tribonacci.length; i++){
+            tribonacci[i] = tribonacci[i - 1] + tribonacci[i - 2] + tribonacci[i-3];
+        }
+
+        System.out.println(Arrays.toString(tribonacci));
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 2");
+        System.out.println();
+        System.out.println();
+
+        //Crear un array con los primeros 20 números de la serie Tetranacci.
+
+        int[] tetranacci = new int[20];
+
+        tetranacci[0] = tetranacci[1] = tetranacci[2] = 0;
+        tetranacci[3] = 1;
+
+        for(int i = 4; i < tetranacci.length; i++){
+            tetranacci[i] = tetranacci[i - 1] + tetranacci[i-2] + tetranacci[i-3] + tetranacci[i-4];
+        }
+
+        System.out.println(Arrays.toString(tetranacci));
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 3");
+        System.out.println();
+        System.out.println();
+
+
+        // Definición:
+        //P(n) = P(n−2) + P(n−3)
+        //Crear un array con los primeros 15 términos de la serie de Perrin.
+        
+        int[] perrin = new int[15];
+
+        perrin[0] = 3;
+        perrin[1] = 0;
+        perrin[2] = 2;
+
+        for(int i = 3; i < perrin.length; i++){
+            perrin[i] = perrin[i-2] + perrin[i-3];
+        }
+
+        System.out.println(Arrays.toString(perrin));
+
+
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 4");
+        System.out.println();
+        System.out.println();
+
+        //Implementar la serie Hofstadter Q hasta el elemento 20. Usar array y precaución con los índices.
+        //Definición:
+        //Q(n) = Q(n - Q(n - 1)) + Q(n - Q(n - 2))
+
+        int[] hofstadterQ = new int[20];
+
+        hofstadterQ[0] = hofstadterQ[1] = 1;
+
+        for(int i = 2; i < hofstadterQ.length; i++){
+            hofstadterQ[i] = hofstadterQ[i - hofstadterQ[i - 1]] + hofstadterQ[i - hofstadterQ[i - 2]];
+        }
+
+        System.out.println(Arrays.toString(hofstadterQ));
+
+
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 5");
+        System.out.println();
+        System.out.println();
+
+        //Crear un array con los primeros 15 números de la serie de Jacobsthal.
+
+        int[] jacobsthal = new int[15];
+
+        jacobsthal[0] = 0;
+        jacobsthal[1] = jacobsthal[2] = 1;
+
+        for(int i = 3; i < jacobsthal.length; i++){
+            jacobsthal[i] = jacobsthal[i - 1] + 2*jacobsthal[i-2];
+        }
+
+        System.out.println(Arrays.toString(jacobsthal));
+
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 6");
+        System.out.println();
+        System.out.println();
+
+        //Crear un array con los primeros 20 elementos de la serie de Narayana.
+
+        int[] narayana = new int[20];
+
+        narayana[0] = narayana[1] = narayana[2] = 1;
+
+        for(int i = 3; i < narayana.length; i++){
+            narayana[i] = narayana[i - 1] + narayana[i - 3];
+        }
+
+        System.out.println(Arrays.toString(narayana));
+
+
 
 
 
