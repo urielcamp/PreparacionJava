@@ -861,7 +861,66 @@ public class Main{
         e1.mostrarSueldo();
         e2.mostrarSueldo();
 
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJERCICIOS EXAMEN CLASES Y OBJETOS");
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
 
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 1");
+        System.out.println();
+        System.out.println();
+
+    ////Crea una clase Estudiantil que represente a un estudiante de una escuela o universidad.
+    //Debe tener los siguientes atributos: nombre, carrera y año de ingreso.
+    //
+    //Implementa tres constructores sobrecargados:
+    //
+    //Un constructor que tome el nombre y la carrera.
+    //Un constructor que tome el nombre, la carrera y el año de ingreso.
+    //Un constructor sin parámetros que inicialice el nombre como "Nombre desconocido",
+    // la carrera como "Carrera desconocida", y el año de ingreso como 0.
+    //Incluye métodos getter (getNombre(), getCarrera(),
+    //getAnioIngreso()) para obtener los valores de los atributos.
+
+    Estudiantil estudiantil1 = new Estudiantil();
+    Estudiantil estudiantil2 = new Estudiantil("Pedro", "LTI");
+    Estudiantil estudiantil3 = new Estudiantil("Sofia", "LTI", 2003);
+
+    estudiantil1.mostrarEst();
+    estudiantil2.mostrarEst();
+    estudiantil3.mostrarEst();
+
+    System.out.println();
+    System.out.println();
+    System.out.println("---------------------------------");
+    System.out.println();
+    System.out.println("EJER 2");
+    System.out.println();
+    System.out.println();
+
+    //Crea una clase CuentaBancaria con los atributos titular, saldo y tipo de cuenta.
+    //Implementa un método que calcule los intereses anuales según el tipo de cuenta
+    //(por ejemplo, cuenta de ahorros tiene un 5%, cuenta corriente un 2%, etc.).
+    //Luego, crea una subclase CuentaDeInversion que sobrescriba el método para aplicar un interés del 10%.
+
+    CuentaBancaria cb1 = new CuentaBancaria("pedro", "cuenta corriente", 30000);
+
+    cb1.calcularIntereses();
+
+    CuentaDeInversion cb2 = new CuentaDeInversion("jazmin", "cuenta de inversion", 30000);
+
+    cb2.calcularIntereses();
+
+    cb1.mostrarSaldo();
+    cb2.mostrarSaldo();
 
 
 
