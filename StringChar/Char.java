@@ -2,7 +2,7 @@ package StringChar;
 
 public class Char {
     public static void main(String[] args) {
-         System.out.println();
+        System.out.println();
         System.out.println();
         System.out.println("---------------------------------");
         System.out.println();
@@ -34,7 +34,7 @@ public class Char {
         System.out.println();
         System.out.println();
 
-        //Ejercicio 2: Contar cuántas vocales hay en un array de char.
+        //Contar cuántas vocales hay en un array de char.
 
         char[] arrayChar = {'a', 'r', 'e', 'o', 'k','i', 'a'};
         int count = 0;
@@ -63,16 +63,29 @@ public class Char {
         System.out.println();
         System.out.println();
 
-        //Ejercicio 3: Dado un texto (String), recorrerlo letra por letra usando charAt y mostrar solo las letras mayúsculas.
+        //Dado un texto (String), recorrerlo letra por letra usando charAt y mostrar solo las letras mayúsculas.
 
         String hola = "Hola Como Estas";
 
         for(int i = 0; i < hola.length(); i++){
             char letra = hola.charAt( i);
             if (Character.isUpperCase(letra)) {
-                            System.out.print(letra + " ");
+
+                System.out.print(letra + " ");
+
             }
         }
+
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 4");
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println();
+        System.out.println();
+
 
 
     }
