@@ -310,12 +310,116 @@ public class Series {
 
 
 
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJERCICIOS  SERIES ARITMETICAS");
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 1");
+        System.out.println();
+        System.out.println();
+
+        //Crear un array con los primeros múltiplos de 3 del 1 al 10.
+
+        int[] multiplosTres = new int[10];
+
+        for(int i = 0; i < multiplosTres.length; i++){
+            if (i%3 == 0) {
+                multiplosTres[i] = i;
+            }
+        }
+
+        System.out.println(Arrays.toString(multiplosTres));
+
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 2");
+        System.out.println();
+        System.out.println();
+
+        //Generar una serie que comienza en 5 y suma 4 en cada paso (5, 9, 13...).
+
+        int[] serieCinco = new int[20];
+
+        serieCinco[0] = 5;
+
+        for(int i = 1; i < serieCinco.length; i++){
+
+            serieCinco[i] = serieCinco[i - 1] + 4;
+
+        }
+
+        System.out.println(Arrays.toString(serieCinco));
 
 
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 3");
+        System.out.println();
+        System.out.println();
 
 
+        //Crear un array con los primeros 15 números impares.
+
+        int[] impares = new int[15];
+
+        for(int i = 1; i < impares.length ; i++){
+            
+                impares[i] = 2 * i + 1;
+        }
+    
+        System.out.println(Arrays.toString(impares));
 
 
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 4");
+        System.out.println();
+        System.out.println();
+
+        //Generar una serie descendente de 100 en pasos de 5.
+
+        int[] descendente = new int[20];
+        descendente[0] = 100;
+
+        for(int i = 1; i < descendente.length; i++){
+            descendente[i] = descendente[i - 1] - 5;
+        }
+
+        System.out.println(Arrays.toString(descendente));
+
+        
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 5");
+        System.out.println();
+        System.out.println();
+
+        //Crear una serie alternando entre sumar 2 y restar 1 (ej: 1, 3, 2, 4, 3...).
+
+        int[] sumaResta = new int[10];
+        sumaResta[0] = 1;
+
+        for(int i = 1; i< sumaResta.length; i++){
+            if (i%2 != 0) {
+                sumaResta[i] = sumaResta[i - 1] + 2;
+            }else{
+                sumaResta[i] = sumaResta[i - 1] - 1;
+            }
+        }
+
+        System.out.println(Arrays.toString(sumaResta));
 
 
 
