@@ -1,15 +1,15 @@
-package StringChar;
-
-public class Char {
+package StringssChar;
+public class Figuras {
     public static void main(String[] args) {
         System.out.println();
         System.out.println();
         System.out.println("---------------------------------");
         System.out.println();
-        System.out.println("EJERCICIOS  CHAR");
+        System.out.println("EJERCICIOS FIGURAS");
         System.out.println();
         System.out.println("---------------------------------");
         System.out.println();
+
 
         System.out.println("EJER 1");
         System.out.println();
@@ -18,11 +18,17 @@ public class Char {
         System.out.println();
         System.out.println();
 
-        //Leer un char y decir si es letra, número o símbolo.
+        //Triángulo recto de # con n filas.
 
-        char n = 'j';
-        System.out.println(Character.isLetter(n));
-        System.out.println(Character.isDigit(n));
+        int n = 6;
+
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j<= i; j++){
+                System.out.print("#");
+            }
+            System.out.println();
+        }
+
 
         System.out.println();
         System.out.println("---------------------------------");
@@ -34,24 +40,14 @@ public class Char {
         System.out.println();
         System.out.println();
 
-        //Contar cuántas vocales hay en un array de char.
+        //Triángulo invertido de *.
 
-        char[] arrayChar = {'a', 'r', 'e', 'o', 'k','i', 'a'};
-        int count = 0;
-
-        for(int i = 0; i < arrayChar.length; i++){
-            if (
-                arrayChar[i] == 'a' || 
-                arrayChar[i] == 'e'|| 
-                arrayChar[i] == 'i' || 
-                arrayChar[i] == 'o' || 
-                arrayChar[i] == 'u'
-            ) {
-                count++;
+        for(int i = n; i >= 0; i--){
+            for(int j = 1; j <= i; j++){
+                System.out.print("*");
             }
+            System.out.println();
         }
-
-        System.out.println(count);
 
         System.out.println();
         System.out.println("---------------------------------");
@@ -63,17 +59,17 @@ public class Char {
         System.out.println();
         System.out.println();
 
-        //Dado un texto (String), recorrerlo letra por letra usando charAt y mostrar solo las letras mayúsculas.
+        //Triángulo derecho alineado con #.
 
-        String hola = "Hola Como Estas";
-
-        for(int i = 0; i < hola.length(); i++){
-            char letra = hola.charAt( i);
-            if (Character.isUpperCase(letra)) {
-
-                System.out.print(letra + " ");
-
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= n - 1; j++){
+                System.out.print(" ");
+            } 
+            
+            for(int j = 1; j <= i; j++){
+                System.out.print("#");
             }
+            System.out.println();
         }
 
         System.out.println();
@@ -85,6 +81,25 @@ public class Char {
         System.out.println();
         System.out.println();
         System.out.println();
+
+        //Pirámide con * (con espacios a los lados).
+
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= i; j++){
+                System.out.print("*");
+                
+            }
+            System.out.println();
+        }
+
+
+
+
+
+
+
+
+
 
 
 
