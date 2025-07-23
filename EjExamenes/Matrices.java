@@ -231,7 +231,312 @@ public class Matrices {
         System.out.println();
         System.out.println();
 
-        //
+        //Calcular el promedio de los elementos mayores que 10 en una matriz.
 
+        int[][] m ={
+            {23, 3, 553, 3},
+            {24, 10, 21, 3},
+            {21, 2, 34, 2},
+            {213, 3, 4, 6}
+        };
+
+        int sAux = 0;
+        int cAux = 0;
+        for(int i = 0; i < m.length; i++){
+            for(int j = 0; j < m[i].length; j++){
+                if(m[i][j] > 10){
+                    sAux += m[i][j];
+                    cAux++;
+                }
+            }
+        }
+
+            double pAux = sAux / cAux;
+            System.out.println("Promedio de la matriz = " + pAux);
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 9");
+        System.out.println();
+        System.out.println();
+
+        //Verificar si el promedio de una fila es mayor al promedio de otra y mostrar cuál es mayor.
+
+        int[][] arrM = {
+            {3, 3, 3},
+            {3, 3, 3},
+            {6, 6, 6}
+        };
+
+        int filaA = 0;
+        int filaB = 1;
+
+        int sumaA = 0;
+        for(int i = 0; i < arrM[filaA].length; i++){
+            sumaA += arrM[filaA][i];
+        }
+        
+        int sumaB = 0;
+        for(int i = 0; i < arrM[filaB].length; i++){
+            sumaB += arrM[filaB][i];
+        }
+
+        double promedioA = (double) sumaA / arrM[filaA].length;
+        double promedioB = (double) sumaB / arrM[filaB].length;
+
+        if (promedioA > promedioB) {
+            System.out.println("La fila " + filaA + " tiene promedio mas alto que la fila " + filaB);
+        }else if(promedioB > promedioA){
+            System.out.println("La fila " + filaB + " tiene promedio mas alto que la fila " + filaA);
+        }else{
+            System.out.println("El promedio de las dos filas son iguales");
+        }
+    
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 10");
+        System.out.println();
+        System.out.println();
+
+        //Sumar dos matrices del mismo tamaño.
+
+        int[][] mA = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        int[][] mB = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        int filas = mA.length;
+        int columnas = mA[0].length;
+        int[][] resultado = new int[filas][columnas];
+
+        for(int i = 0; i < filas; i++){
+            for(int j = 0; j < columnas; j++){
+                resultado[i][j] = mA[i][j] + mB[i][j];
+                System.out.print(resultado[i][j] + " ");
+                
+            }
+            System.out.println();
+        }
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 11");
+        System.out.println();
+        System.out.println();
+
+        //Sumar dos matrices 4x4.
+
+        int [][] a = {
+            {100 , 200, 300, 400},
+            {500, 600, 700, 800},
+            {900 , 1000, 1100, 1200},
+            {1300 , 1400, 1500, 1600}
+        };
+
+        int [][] b = {
+            {10 , 20, 30, 40},
+            {50 , 60, 70, 80},
+            {90 , 100, 110, 120},
+            {130 , 140, 150, 160}
+        };
+
+        int filasA = a.length;
+        int columns = a[0].length;
+
+        int [][] result = new int [filasA][columns];
+
+        for(int i = 0; i < filasA; i++){
+            for(int j = 0; j < columns; j++){
+                result[i][j] = a[i][j] + b[i][j];
+                System.out.print(result[i][j] +  " ");
+            }
+            System.out.println();
+        }
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 12");
+        System.out.println();
+        System.out.println();
+
+        //Restar dos matrices 4x4.
+
+        int[][] res = new int[filasA][columns];
+
+        for(int i = 0; i < filasA; i++){
+            for(int j = 0; j < columns; j++){
+                res[i][j] = a[i][j] - b[i][j];
+                System.out.print(res[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 13");
+        System.out.println();
+        System.out.println();
+
+        //Contar cuántos elementos de una matriz son mayores que 10.
+
+        int[][] mz = {
+            {1, 34, 2},
+            {23, 4, 6},
+            {31, 7, 65}
+        };
+
+        int cnt = 0;
+
+        for(int i = 0; i < mz.length; i++){
+            for(int j = 0; j< mz[i].length; j++){
+                if (mz[i][j] > 10) {
+                    cnt++;
+                }
+            }
+        }
+
+        System.out.println("La matriz tiene " + cnt + " valores mayores a 10");
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 14");
+        System.out.println();
+        System.out.println();
+
+        //Reemplazar todos los números pares por 0 y los impares por 1.
+
+        for(int i = 0; i < mz.length; i++){
+            for(int j = 0; j < mz[i].length; j++){
+                if (mz[i][j]%2 == 0) {
+                    mz[i][j] = 0;
+                }else{
+                    mz[i][j] = 1;
+                }
+
+                System.out.print(mz[i][j] + " ");
+            }
+
+            System.out.println();
+        }
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 15");
+        System.out.println();
+        System.out.println();
+
+        //Multiplicar cada elemento de una matriz por un número escalar (por ejemplo, 2).
+
+        int [][] mza = {
+            {12, 2, 4},
+            {2, 5, 21},
+            {10, 3, 7}
+        };
+
+        for(int i = 0; i < mza.length; i++){
+            for(int j = 0; j < mza.length; j++){
+                mza[i][j] = mza[i][j] * 2;
+                System.out.print(mza[i][j] + " ");
+            }
+
+            System.out.println();
+        }
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 16");
+        System.out.println();
+        System.out.println();
+
+        //Crear una matriz identidad de tamaño n (con 1 en la diagonal principal y 0 en el resto).
+
+        int[][] mIdentidad = {
+            {12, 2, 34},
+            {23, 1, 43},
+            {21, 12, 45}
+        };
+
+        for(int i = 0; i < mIdentidad.length; i++){
+            for(int j = 0; j < mIdentidad[i].length; j++){
+                mIdentidad[i][j] = 0;
+                System.out.print(mIdentidad[i][j] + " ");
+
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        for(int i = 0; i < mIdentidad.length; i++){
+            mIdentidad[i][i] = 1;
+        }
+
+        for(int i = 0; i < mIdentidad.length; i++){
+            for(int j = 0; j < mIdentidad[i].length; j++){
+                System.out.print(mIdentidad[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
     }
-}
