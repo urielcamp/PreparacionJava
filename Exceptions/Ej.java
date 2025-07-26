@@ -72,19 +72,66 @@ public class Ej {
         } 
 
 
+        System.out.println();
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 4");
+        System.out.println();
+        System.out.println();
 
+        int[] ar = { 1,2,2,5,6};
 
-
-
-
-
-
-
-
-
-
+        prueba("hola", ar);
 
     }
+
+
+
+
+        //Tenemos un procedimiento que recibe 2 parámetros un String, y un array de tipo 
+        //entero unidimensional, Dentro del procedimiento se muestran unos mensajes de acuerdo a los 
+        //parámetros recibidos, se debe controlar y colocar el código si se puede producir una excepción y
+        //controlarla.
+
+        public static void prueba(String dato,int[] vector){
+
+            try{
+                System.out.println(vector[vector[1]]);
+            }catch(Exception e){
+                System.out.println("indice del array fuera de rango");
+            }
+
+            try{
+                System.out.println(dato.length());
+            }catch(Exception e){
+                System.out.println("String null, no se puede saber su largo");
+            }
+
+
+
+
+            System.out.println("Llegamos al final ok");
+        }
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     
 
 
